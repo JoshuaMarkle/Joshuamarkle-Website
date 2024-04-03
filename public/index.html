@@ -1,168 +1,109 @@
-<!--
-joshuamarkle.com
-Source: https://github.com/JoshuaMarkle/Joshuamarkle-Website
--->
-
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta charset="UTF-8">
-  <title>Joshua Markle | Home</title>
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="/css/style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&display=swap" rel="stylesheet">
-
-  <script src="/scripts/animations.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
-
-</head>
-
-<body>
-
-  <nav style="padding-top: 20px; margin-right;">
-    <ul class="extra-navbar"></ul>
-    <ul>
-      <div class="navbar">
-        <a>🏠 Home</a>
-        <a href="#about">👨‍💻 About</a>
-        <div class="dropdown">
-          <button class="dropbtn">📂 Projects <i class="fa fa-caret-down"></i></button>
-          <div class="dropdown-content">
-            <a href="/projects/milestone.html">🚗 Milestone App</a>
-            <a href="/projects/ai.html">🤖 AI Projects</a>
-            <a href="/projects/domjudge.html">💻 DOMjudge Server</a>
-            <a href="/projects/videogames.html">🕹️ Video Games</a>
-            <a href="/projects/misc.html">❓ Miscellaneous</a>
-          </div>
-        </div>
-        <a href="/contact.html">✉️ Contact</a>
-      </div>
-    </ul>
-  </nav>
-
-  <main>
-
-    <div class="content">
-      <div style="margin-top:5vh; margin-bottom: 20vh">
-        <div class="title-row">
-          <div id="title" class="title">
-            <h2>Hello, my name is</h2>
-            <h1>Joshua Markle✨</h1>
-            <p>I am a student passionate about software development as well as AI</p>
-          </div>
-          <img id="title-image" src="images/stick-guy.png">
-        </div>
-        <h4 align="center" style="font-weight:600;">Learn more about my:</h4>
-        <ul class="goto-items">
-          <li><a href="#skills"><p style="margin:0;font-weight:600;">🔧 Skills</p></a></li>
-          <li><a href="#projects"><p style="margin:0;font-weight:600;">💡 Projects</p></a></li>
-          <li><a href="files/Joshua Markle Resume.pdf" target="_blank"><p style="margin:0;font-weight:600;">📝 Resume</p></a></li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="background">
-      <div class="content">
-        <div id="about" style="margin-top:5vh; margin-bottom: 10vh;">
-          <h2 id="about-title" style="transform: translateY(50px); opacity: 0; transition: all 0.1s ease-out;">👨‍💻 About Me</h2>
-          <div id="about-content" style="transform: translateY(50px); opacity: 0; transition: all 0.1s ease-out;">
-            <p>Hello! My name is Josh and I enjoy creating things that live on the internet. My interest in software development started back in 2019 when I decided to try to build my own video games!</p>
-            <p>Fast-forward to today, and I’ve built multiple mobile apps, video games, and my very own website🎉. My main focus these days is perfecting Milestone📱, my largest passion project created to help student drivers!</p>
-            <p>I also recently got invovled in various programming competitions and app challenges😄!</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="content">
-      <div id="skills" style="margin-top:5vh; margin-bottom: 10vh;">
-        <h2 id="skills-title" style="transform: translateY(50px); opacity: 0; transition: all 0.1s ease-out;">🔧 Skills</h2>
-        <div id="skills-content" style="transform: translateY(50px); opacity: 0; transition: all 0.1s ease-out;">
-          <p>As a computer scientist, I'm always on the cutting edge of technology, which is super exciting😝! I'm primarily interested in software development, database management, and systems analysis. I get a kick out of solving complex computational problems using data structures and algorithms, and I'm always looking for new ways to apply machine learning🤖 and artificial intelligence to real-world challenges. </p>
-          <h4 align="center" style="font-weight:600;">Primary Programming Languages</h4>
-          <ul class="goto-items">
-            <li><a><p style="margin:0;font-weight:600;">🐍 Python</p></a></li>
-            <li><a><p style="margin:0;font-weight:600;">🔨 C/C++</p></a></li>
-            <li><a><p style="margin:0;font-weight:600;">🎮 C#</p></a></li>
-          </ul>
-          <h4 align="center" style="font-weight:600;">Familiar Languages</h4>
-          <ul class="goto-items">
-            <li><a><p style="margin:0;font-weight:600;">🌐 JavaScript</p></a></li>
-            <li><a><p style="margin:0;font-weight:600;">📝 HTML</p></a></li>
-            <li><a><p style="margin:0;font-weight:600;">🎨 CSS</p></a></li>
-            <li><a><p style="margin:0;font-weight:600;">🔤 LaTeX</p></a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <div class="background">
-      <div class="content">
-        <div style="margin-top:5vh; margin-bottom: 5vh">
-          <div style="text-align: center; margin-bottom: 2vh;">
-            <h2 id="projects" style="transform: translateY(50px); opacity: 0; transition: all 0.25s ease-out;">
-              💡 My Projects
-            </h2>
-          </div>
-
-          <div class="container-row">
-            <a href="/projects/milestone.html" class="container">
-              <h1>🚗</h1>
-              <h4>Milestone</h4>
-              <p>A mobile app designed for student drivers!</p>
-            </a>
-            <a href="/projects/ai.html" class="container">
-              <h1>🤖</h1>
-              <h4>AI Projects</h4>
-              <p>A collection of projects that I used AI to solve!</p>
-            </a>
-            <a href="/projects/domjudge.html" class="container">
-              <h1>💻</h1>
-              <h4>GSST DOMJudge</h4>
-              <p>Competitive programming server I run for school!</p>
-            </a>
-          </div>
-
-          <div class="container-row">
-            <a href="https://github.com/JoshuaMarkle/dotfiles" target="_blank" class="container">
-              <h1>📂</h1>
-              <h4>Linux Dotfiles</h4>
-              <p>My linux dotfiles based on Arch and AwesomeWM!</p>
-            </a>
-            <a href="/projects/videogames.html" class="container">
-              <h1>🕹️</h1>
-              <h4>Video Games</h4>
-              <p>A collection of video games that I created + game jams!</p>
-            </a>
-            <a href="/projects/misc.html" class="container">
-              <h1>❓</h1>
-              <h4>Miscellaneous</h4>
-              <p>A collection of uncategorized side projects!</p>
-            </a>
-          </div> 
-        </div>
-      </div>
-    </div>
-
-  </main>
-
-  <footer class="site-footer">
-    <div style="text-align: center;">
-      <a href="#"><i class="fa fa-instagram" style=" margin-right:0.5vw"></i></a>
-      <a href="#"><i class="fa fa-linkedin"></i></a>
-    </div>
-    <div class="text-center">
-      <p>
-        Designed & Built by Joshua Markle
-        <a href="https://github.com/JoshuaMarkle/joshuamarkle.com/tree/main">View Here</a>
-      </p>
-    </div>
-  </footer>
-</body>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="description" content="Welcome to my portfolio website! This is a little bit about me :)">
+		<meta name="author" content="Joshua Markle">
+		<title>Joshua Markle | Portfolio</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script type="module" src="https://md-block.verou.me/md-block.js"></script>
+		<script src="scripts/animations.js"></script>
+	</head>
+	<body>
+		<nav>
+			<ul>
+				<li><a href="https://github.com/JoshuaMarkle" target="_blank">🏠 Home</a></li>
+				<li><a id="about-toggler">👨‍💻 About</a></li>
+				<li><a href="#projects">📂 Projects</a></li>
+			</ul>
+		</nav>
+		<iframe src="marquee.html" width="100%" height="34px" frameborder="0" scrolling="no"></iframe>
+		<div id="main">
+			<div id="title">
+				<h2>Hi, my name is</h2>
+				<h1>Joshua Markle</h1>
+				<p>I enjoy creating things that live on the internet ✨</p>
+				<div id="about" class="collapse">
+					<p>My name is Joshua Markle, I just turned 18 🎂, and I am soon to graduate from high school. I have a passion for all things technology and design, from software engineering to UI/UX.</p>
+					<p>Below are some of the projects I have developed over my programming career.</p>
+				</div>
+				<h3>Learn more about my:</h3>
+				<ul id="goto-items">
+					<li><a href="#projects"><p>🔧 Skills</p></a></li>
+					<li><a href="#projects"><p>💡 Projects</p></a></li>
+					<li><a href="files/Joshua Markle Resume.pdf" target="_blank"><p>📝 Resume</p></a></li>
+				</ul>
+			</div>
+		</div>
+		<div id="projects">
+			<h2>Projects</h2>
+			<p>A bit of stuff I do in my free time</p>
+			<div class="cards">
+				<a class="card" href="https://play.google.com/store/apps/details?id=com.joshuamarkle.milestone" target="_blank">
+					<div class="container">
+						<img src="images/milestone/showcase.png" alt="Milestone">
+					</div>
+					<div class="details">
+						<h3>Milestone</h3>
+						<p>An app designed to assit aspiring drivers track their hours and ultimately get their license!</p>
+					</div>
+				</a>
+				<a class="card" href="https://github.com/JoshuaMarkle/AlgoType" target="_blank">
+					<div class="container">
+						<img src="images/algotype.png" alt="AlgoType.net">
+					</div>
+					<div class="details">
+						<h3>AlgoType.net</h3>
+						<p>A website designed for programmers to improve their typing speed. It contains a series of typing tests on real code.</p>
+					</div>
+				</a>
+				<a class="card" href="https://tavyz.itch.io/" target="_blank">
+					<div class="container">
+						<img src="https://img.itch.zone/aW1nLzYzMTkxNzIuZ2lm/original/FMZaRA.gif" alt="Video Game Dashboard">
+					</div>
+					<div class="details">
+						<h3>Video Games</h3>
+						<p>I've made a bunch of video games, mainly for Game Jams. Check em' out!<br><strong>RIP - Unity</strong></p>
+					</div>
+				</a>
+				<a class="card" href="https://github.com/JoshuaMarkle/dotfiles" target="_blank">
+					<div class="container">
+						<img src="https://github.com/JoshuaMarkle/dotfiles/raw/main/docs/screenshot1.png" alt="Dotfiles">
+					</div>
+					<div class="details">
+						<h3>Dotfiles</h3>
+						<p>An Arch Linux based operating system designed specifically for my workflow. The core is built on wayland (hyprland).</p>
+					</div>
+				</a>
+				<a class="card" href="https://github.com/JoshuaMarkle/nvim" target="_blank">
+					<div class="container">
+						<img src="https://github.com/JoshuaMarkle/nvim-config/raw/main/docs/screenshot1.png?raw=true" alt="Neovim">
+					</div>
+					<div class="details">
+						<h3>Neovim</h3>
+						<p>A custom "IDE" for nvim. It is its own entity within my workflow/operating system enhancement project</p>
+					</div>
+				</a>
+				<a class="card" href="https://joshuamarkle.github.io/research-project/research.pdf" target="_blank">
+					<div class="container">
+						<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.draketo.de%2Fsoftware%2F11020379-crieo-mnths.png&f=1&nofb=1&ipt=04ad2fe410ee01caeccdd5c37fbf377b9384b8f142077be13c73264c61f46da8&ipo=images" alt="Keyboard Layout Optimization">
+					</div>
+					<div class="details">
+						<h3>Keyboard Layout Optimization</h3>
+						<p>A research study on optimizing keyboard layouts using AI (a genetic algorithm) and constructing a physical split, ortholinear keyboard.</p>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div style="flex: 1;"></div>
+		<footer>
+			<a href="https://github.com/JoshuaMarkle/Joshuamarkle-Website" target="_blank">
+				<i class="fab fa-github"></i>JoshuaMarkle/Joshuamarkle-Website</a>
+		</footer>
+	</body>
 </html>
